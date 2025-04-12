@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti Tourist - BOOKING</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--------- HEADER --------->
+    <header class="header">
+        <div class="header-left">
+            <h1><a href="home.html">Discover Taniti</a></h1>
+            <p><a href="home.html">Adventure. Culture. Relaxation.</a></p>
+        </div>
+        <div class="header-right">
+            <a href="booking.html" class="book-now-btn">Book Now</a>
+        </div>
+    </header>
+
+<!--------- NAVIGATION --------->
+<nav class="nav-bar">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+    </ul>
+</nav>
+
+<!--------- BOOKING SECTION --------->
+
+    <section class="two-column">
+        <div class="text-column">
+            <form class="booking-form" id="bookingForm" >
+                <h2>Book Your Visit</h2>
+          
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+          
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+          
+                <label for="guests">Number of Guests:</label><br>
+                <input type="number" id="guests" name="guests" min="1" required><br><br>
+          
+                <label for="date">Arrival Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+          
+                <label for="message">Special Requests:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+          
+                <input type="submit" value="Submit Booking">
+            </form>
+        </div>
+
+        <div class="image-column booking-images">
+            <img src="images/image-one.jpg" alt="Dock with view of the island">
+            <img src="images/image-five.jpg" alt="Pelican standing on railing over the ocean">
+        </div>
+    </section>
+
+    <hr>
+
+<!--------- FAQ SECTION --------->
+
+    <section class="two-column">
+        <div class="image-column booking-images">
+            <img src="images/image-seven.jpg" alt="Ocean view with palm tree at sunset">
+            <img src="images/image-six.jpg" alt="Sea turtle swimming in ocean">
+        </div>
+
+        <div class="text-column faq-column">
+            <h2>Frequently Asked Questions</h2>
+            <ul class="faq-list">
+              <li><strong>What type of power outlets does Taniti use?</strong><br>
+                Taniti uses 120-volt power outlets, the same as in the United States.
+              </li>
+        
+              <li><strong>Is alcohol available at all hours?</strong><br>
+                Alcohol cannot be served or sold between midnight and 9:00 a.m.
+              </li>
+        
+              <li><strong>What is the legal drinking age in Taniti?</strong><br>
+                The drinking age is 18, although it is not strictly enforced.
+              </li>
+        
+              <li><strong>Will I be able to communicate easily in English?</strong><br>
+                Most younger Tanitians speak fluent English, but older residents in rural areas may not.
+              </li>
+        
+              <li><strong>Are there medical facilities on the island?</strong><br>
+                Yes, there is one hospital and several clinics. The hospital has many multilingual staff.
+              </li>
+        
+              <li><strong>Is Taniti a safe place to visit?</strong><br>
+                Violent crime is very rare. However, there are occasional reports of pickpocketing in tourist areas.
+              </li>
+        
+              <li><strong>Should I be aware of local holidays when planning my visit?</strong><br>
+                Yes. Taniti has many national holidays during which tourist attractions and restaurants may close.
+              </li>
+        
+              <li><strong>What currency is used in Taniti?</strong><br>
+                The U.S. dollar is the official currency, but many businesses also accept euros and yen. Most businesses also accept major credit cards.
+              </li>
+            </ul>
+          </div>
+    </section>
+
+<!--------- FOOTER --------->
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="booking.html">FAQs</a></li>
+            </ul>
+            <p class="image-credit">Images from <a href="https://www.pexels.com" target="_blank">Pexels.com</a></p>
+        </div>
+
+        <div class="footer-right">
+            <h2 class="taniti-branding"><a href="home.html">Taniti</a></h2>
+        </div>
+    </footer>
+
+</body>
+</html>

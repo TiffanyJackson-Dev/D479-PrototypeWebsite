@@ -1,0 +1,367 @@
+/* Apply to the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f7ff; /* soft tropical blue */
+    color: #333;
+}
+
+/* Heading Styles – Fun and Colorful */
+h1 {
+    color: #0077cc; /* vibrant ocean blue */
+}
+  
+h2 {
+    color: #00bfbf; /* deep aqua */
+}
+  
+h3 {
+    color: #ff9e80; /* sunset orange */
+}
+  
+/* Paragraphs – Slightly softer, readable */
+p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+  
+/* Links – Make them playful and bright */
+a {
+    color: #009688; /* teal green */
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+a:hover {
+    color: #ff9800; /* golden-orange on hover */
+}
+
+  
+/* Optional: make sure sections have enough spacing */
+section {
+    padding: 40px 20px;
+}
+
+
+
+/* Header background and layout */
+.header {
+    background-color: #00bfbf; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    flex-wrap: wrap;
+    color: white; /* Makes text pop on colored background */
+}
+  
+/* Heading text inside header */
+.header h1 a {
+    font-size: 2.5rem;
+    margin: 0;
+    color: white;
+}
+  
+.header p a {
+    font-size: 1.1rem;
+    margin: 8px 0 0;
+    color: #fff7f0;
+}
+  
+/* Book Now button in header */
+.book-now-btn {
+    background-color: #ffe600; /* Bright yellow */
+    color: #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+  
+.book-now-btn:hover {
+    background-color: #ffd000;
+}
+
+
+
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: #00796b;
+    padding: 10px 40px;
+}
+  
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+  
+.nav-bar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+  
+.nav-bar li a:hover {
+    color: #ffe600;
+}
+
+
+
+/* Wrapper for the whole section */
+.about-section {
+    margin: 0 auto;
+    padding: 0;
+}
+  
+/* Full-width image container */
+.about-image {
+    width: 100vw; /* full viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+  
+.about-image img {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+  
+/* Centered text content */
+.about-text {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+  
+.about-text h1 {
+    font-size: 1.8rem;
+    color: #00796b;
+    margin-bottom: 15px;
+}
+  
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+
+
+/* Two-column layout */
+.two-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+  
+/* Image takes 1/3 of width */
+.image-column {
+    flex: 1;
+    max-width: 33.33%;
+}
+  
+.image-column img {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+  
+/* Text takes 2/3 of width */
+.text-column {
+    flex: 2;
+    max-width: 66.66%;
+}
+
+
+
+/* Booking Form Styling */
+.booking-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #cce4f6;
+}
+  
+.booking-form h2 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 25px;
+}
+  
+.booking-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+  
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+  
+.booking-form input:focus,
+.booking-form textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.2);
+}
+  
+/* Submit Button */
+.booking-form input[type="submit"] {
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+  
+.booking-form input[type="submit"]:hover {
+    background-color: #00bfbf;
+}
+
+
+
+
+/* FAQ Container Styling */
+.faq-column {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    background-color: #d6ecff;
+}
+  
+.faq-column h2 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+  
+/* FAQ List Styling */
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.faq-list li {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid #00bfbf;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+  
+.faq-list li:hover {
+    background-color: #f0f8ff;
+}
+  
+.faq-list li strong {
+    color: #00bfbf;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+/* Styles ONLY for booking page images */
+.booking-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+  
+.booking-images img {
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+}
+  
+
+
+
+/* Footer Wrapper */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #00796b; 
+    color: white;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+  
+/* Left Column */
+.footer-left h4 {
+    margin-bottom: 10px;
+    color: #ffe600; /* soft yellow for contrast */
+}
+  
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+  
+.footer-left ul li {
+    margin-bottom: 8px;
+}
+  
+.footer-left ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+  
+.footer-left ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-left p a {
+    color: #00f0e0;
+}
+  
+.image-credit {
+    font-size: 0.9rem;
+    color: #dddddd;
+}
+  
+/* Right Side Branding */
+.taniti-branding a {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00f0e0; 
+    margin: 0;
+}
+  
